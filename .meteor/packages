@@ -4,17 +4,14 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-#meteor-base@1.4.0             # Packages every Meteor app needs to have
-autoupdate
+
+#autoupdate
 #hot-code-push  removed from your project
 #livedata       removed from your project
-#meteor-base    removed from your project
 
 
 
-
-mobile-experience@1.0.5       # Packages for a great mobile UX
-mongo@1.5.0                   # The database Meteor supports right now
+#mobile-experience@1.0.5       # Packages for a great mobile UX
 blaze-html-templates@1.0.4 # Compile .html files into Meteor Blaze views
 reactive-var@1.0.11            # Reactive variable for tracker
 tracker@1.2.0                 # Meteor's client-side reactive programming library
@@ -26,5 +23,3 @@ ecmascript@0.11.1              # Enable ECMAScript2015+ syntax in app code
 
 iron:router
 underscore
-
-accounts-password@1.5.1 #для авторизации

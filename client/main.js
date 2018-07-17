@@ -4,13 +4,14 @@ import "framework7-icons";
 import "jquery-mask-plugin";
 
 app = null, mainView = null;
-
+/*
 let flag_welcome = localStorage.getItem('_firstTimeOpenedApp') || null;
 
 if (flag_welcome != "true") {
     localStorage.setItem('_firstTimeOpenedApp', true);
     Router.go('welcome');
 }
+*/
 
 
 Template.AppLayout.rendered = function () {
