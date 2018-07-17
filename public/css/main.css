@@ -1,0 +1,32 @@
+
+.index-card-header-pic .card-content {
+    min-height: 330px;
+}
+
+.index-card-header-pic .card-image {
+    text-align: center;
+}
+
+.index-card-header-pic .card-image img {
+    width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    opacity: 1;
+    border-radius: 5px;
+    transition: 200ms;
+    position: relative;
+    transform: scale(.9);
+    box-sizing: border-box;
+    border: 1px solid rgba(205, 205, 205, .8)
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    z-index: 1;
+    border: 1px solid #007aff;
+    transform: scale(1.4)
+}

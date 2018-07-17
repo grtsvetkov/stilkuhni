@@ -1,0 +1,57 @@
+<template name="promo">
+    <div data-name="main" class="page">
+        {{>toolbar}}
+        {{>navbar}}
+        <div class="page-content">
+            <div class="swiper-container">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    {{#each promo_list}}
+                        <div class="swiper-slide">
+                            <div class="card index-card-header-pic">
+                                <div class="card-header">
+                                    {{{name}}}
+                                </div>
+                                <div class="card-content card-content-padding">
+                                    <div class="card-image">
+                                        <img src="{{img}}">
+                                    </div>
+                                    <p>{{{description}}}</p>
+                                </div>
+                                <div class="card-footer">
+                                    <span></span>
+                                    <a href="#" class="link goItem" data-id="{{@index}}">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+            <div id="promo-item" class="popup">
+                <div class="navbar">
+                    <div class="navbar-inner navbar-current">
+                        <div class="left" style="">
+                            <a href="#" onclick="app.popup.create({el: '#promo-item'}).close();" class="back">
+                                <i class="icon icon-back" style=""></i>
+                                <span class="ios-only">Назад</span>
+                            </a>
+                        </div>
+                        <div class="title">Акция</div>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="card">
+                        {{#with item}}
+                            <div style="min-height: 300px;text-shadow: #000 0 0 4px;color: #FFF;font-size: 1.5em;background-image:url('{{img}}')"
+                                 valign="bottom" class="card-header">{{{name}}}</div>
+                            <div class="card-content card-content-padding">
+                                <p class="date">размещено 21 января 2015г.</p>
+                                <p>{{{description}}}</p>
+                            </div>
+                        {{/with}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

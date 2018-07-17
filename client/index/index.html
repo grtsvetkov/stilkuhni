@@ -1,0 +1,33 @@
+<template name="index">
+    <div data-name="main" class="page">
+        {{>toolbar}}
+        {{>navbar}}
+        <div class="page-content">
+            <div class="swiper-container">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    {{#each catalog_list}}
+                        <div class="swiper-slide">
+                            <div class="card index-card-header-pic">
+                                <div class="card-header">
+                                    {{name}}
+                                </div>
+                                <div class="card-content card-content-padding">
+                                    <div class="card-image">
+                                        <img src="{{img}}">
+                                    </div>
+                                    <p>{{description}}</p>
+                                </div>
+
+                                <div class="card-footer">
+                                    <span></span>
+                                    <a href="#" class="link">Смотреть</a>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
